@@ -39,8 +39,8 @@ import { ReactElement } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { Input } from "@/components/ui/input";
+import { SidebarProvider } from "@/components/ui/sidebar";
+
 import MobileHeader from "@/components/mobile-header";
 
 interface DashboardLayoutProps {

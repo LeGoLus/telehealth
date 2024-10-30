@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { ImagePlus, X } from "lucide-react";
+import Image from "next/image";
 
 type FileUploadProps = {
   label: string;
@@ -40,7 +41,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ label, onChange, value }) => {
     <div className="relative aspect-square border-2 border-dashed rounded-lg flex items-center justify-center overflow-hidden">
       {preview ? (
         <div className="relative w-28 h-28 ">
-          <img
+          <Image
             src={preview}
             alt={label}
             className="w-full h-full object-cover"

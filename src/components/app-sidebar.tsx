@@ -1,13 +1,7 @@
 "use client";
 
 import * as React from "react";
-import {
-  SquareTerminal,
-  Bot,
-  BookOpen,
-  Settings2,
-  ShoppingCart,
-} from "lucide-react";
+import { BookOpen, Settings2, ShoppingCart } from "lucide-react";
 import {
   Command,
   CommandEmpty,
@@ -29,11 +23,9 @@ import {
 } from "@/components/ui/sidebar";
 import { NavDashboard } from "./nav-dashboard";
 import { NavPosSection } from "./nav-pos-section";
-import { NavProjects } from "./nav-projects";
 import { NavOrder } from "./nav-order-management";
 import { NavPromotion } from "./nav-promotion-management";
 import { NavProduct } from "./nav-product-management";
-import { NavMain } from "./nav-main";
 
 import { GoStack } from "react-icons/go";
 import { Image, Images } from "lucide-react";
@@ -43,55 +35,6 @@ import { PiBellSimpleLight } from "react-icons/pi";
 import { BsDiagram3 } from "react-icons/bs";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { HiOutlineReceiptRefund } from "react-icons/hi2";
-
-const navMainItems = [
-  {
-    title: "Orders",
-    url: "#",
-    icon: ShoppingCart,
-    items: [
-      { title: "All", url: "#" },
-      { title: "Scheduled", url: "#" },
-      { title: "Pending", url: "#" },
-      { title: "Accepted", url: "#" },
-      { title: "Processing", url: "#" },
-      { title: "Order On The Way", url: "#" },
-      { title: "Delivered", url: "#" },
-      { title: "Canceled", url: "#" },
-      { title: "Payment Failed", url: "#" },
-      { title: "Refunded", url: "#" },
-      { title: "Offline Payment", url: "#" },
-    ],
-  },
-  {
-    title: "Order Refunds",
-    url: "#",
-    icon: HiOutlineReceiptRefund,
-    items: [{ title: "Refund Request", url: "#" }],
-  },
-  {
-    title: "Documentation",
-    url: "#",
-    icon: BookOpen,
-    items: [
-      { title: "Introduction", url: "#" },
-      { title: "Get Started", url: "#" },
-      { title: "Tutorials", url: "#" },
-      { title: "Changelog", url: "#" },
-    ],
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings2,
-    items: [
-      { title: "General", url: "#" },
-      { title: "Team", url: "#" },
-      { title: "Billing", url: "#" },
-      { title: "Limits", url: "#" },
-    ],
-  },
-];
 
 const ItemsOrderManagement = [
   {
